@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+/* Globals */
+:root {
+    --principal: #1A1A40;
+    --secundario: #b80abe;
+    --terciario: rgb(165, 12, 179);
+    --cuarto: #FA58B6;
+}
+
+/* Global */
+body {
+    background-color: black;
+    color: var(--cuarto);
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+*{
+    font-family: 'mainFont', monospace;
+    color: var(--terciario);
+}
+
+h1 {
+    color: var(--secundario);
+}
+
+h2 {
+    color: var(--cuarto);
+}
+
+a {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+
+/* Nav Bar */
+.navbar-nav {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navbar {
+    margin: auto auto;
+}
+
+
+/* Top Container */
+.lg-bg {
+    background-image: url("./header.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.top {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.top .top-nav {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.top .top-nav .navbar {
+    height: 8vh;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+
+.bg-top {
+    height: 100vh;
+    position: relative;
+    display: flex;
+}
+
+.content {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content h1 {
+    font-size: 4rem;
+}
+
+.content p {
+    width: 60%;
+    text-align: center;
+    color: white;
+}
+
+.content .top-mint-btn {
+    margin-top: 2rem;
+    padding: .6rem 3rem;
+    border-radius: 0;
+    background-color: transparent;
+    border: var(--secundario) 1px solid;
+}
+.content .top-mint-btn:hover {
+    background-color: var(--secundario);
+}
+
+
+/* Mint Container */
+.mint-block {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .6);
+    background-image: url("./bg2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mint-block h2 {
+    margin-bottom: 2rem;
+    font-size: 4rem;
+}
+
+.nft-box {
+    height: 80%;
+    background-color: var(--secundario);
+    margin: 0 auto 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0;
+    border-radius: 10px;
+}
+
+.nft-image {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.img-nft {
+    position: relative;
+    height: 100%;
+}
+
+.nft-image .img-nft img {
+    width: 100%;
+    height: 100%;
+}
+
+.nft-image .arrow-left {
+    position: absolute;
+    bottom: 47.5%;
+    left: 5%;
+    width: 5%;
+    height: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.nft-image .arrow-right {
+    position: absolute;
+    bottom: 47.5%;
+    right: 5%;
+    width: 5%;
+    height: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.nft-image .img-nft .nft-number {
+    position: absolute;
+    bottom: 0;
+    right: -50%;
+    width: 50%;
+    height: 15%;
+    background-color: var(--principal);
+    border: var(--terciario) 1px solid;
+    border-left: var(--cuarto) 6px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nft-image .img-nft .nft-number p {
+    color: white;
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+.nft-buy {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 15%;
+}
+
+.nft-info {
+    background-color: var(--principal);
+    display: flex;
+    flex-direction: column;
+}
+
+.nft-info .btn-connect {
+    margin-left: auto; 
+    margin-right: 0;
+    border-radius: 0;
+    background-color: transparent;
+    border-color: var(--secundario);
+    padding: 1rem 3rem;
+}
+.nft-info .btn-connect:hover {
+    background-color: var(--secundario);
+}
+
+.btn-mint {
+    border-radius: 0;
+    background-color: transparent;
+    border-color: var(--secundario);
+    padding: 1rem 3rem;
+    color: white;
+}
+.btn-mint:hover {
+    background-color: var(--principal);
+    color: white;
+}
+
+.nft-info p {
+    color: var(--secundario);
+}
+
+.nft-info-text {
+    width: 80%;
+    margin: auto auto;
+}
+
+.nft-info-text h3 {
+    color: var(--cuarto);
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+
+.nft-info-text p {
+    max-width: 80%;
+}
+
+.nft-cost {
+    background-color: var(--principal);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nft-cost p {
+    color: white;
+    margin: 0;
+}
+
+.bggif {
+    position: ab;
+    width: 100%;
+}
+
+
+/* RoadMap Block */
+.roadmap-block {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .6);
+    background-image: url("./bg3.gif");
+    background-position: start;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.roadmap-block h2 {
+    font-size: 4rem;
+    margin-bottom: 4rem;
+}
+
+.roadmap-block p {
+    color: white;
+}
+
+
+/* Whitepaper Block */
+.whitepaper-block {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .6);
+    background-image: url("./bg4.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.whitepaper-block h2 {
+    color: var(--secundario);
+    font-size: 5rem;
+    line-height: 2;
+}
+
+.whitepaper-block p {
+    color: white;
+    font-size: 1.2rem;
+    line-height: 2;
+    width: 80%;
+    margin: 0 auto 2rem;
+    text-align: center;
+}
+
+.whitepaper-block .whitepaper-link {
+    text-decoration: none;
+    color: white;
+    padding: 2rem 6rem;
+    border: var(--cuarto) 2px solid;
+    transition: .2s;
+}
+.whitepaper-block .whitepaper-link:hover {
+    background-color: var(--cuarto);
+    transition: .2s;
+    cursor: pointer;
+}
+
+
+/* Footer Block */
+.footer-block {
+    height: 15vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-block p {
+    color: rgb(177, 177, 177);
+}
+
+
+.bodyPart {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Separator */
+.separator {
+    background: url("./separator.gif") no-repeat center;
+
+    -webkit-background-size: cover;
+    background-size: contain;
+    background-repeat: repeat;
+
+    height: 25vh;
+    width: 100%;
+    display: block;
+    
+}
+
+
+/* Team Container */
+.team-block {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .6);
+    background-image: url("./bg2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.team-block h2 {
+    font-size: 4rem;
+    margin-bottom: 4rem;
+}
+
+.team-block p {
+    font-size: 1.2rem;
+    width: 80%;
+    color: white;
+    text-align: center;
+}
+
+/* About Container */
+.about-block {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .6);
+    background-image: url("./bg2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-block h2 {
+    font-size: 4rem;
+    margin-bottom: 4rem;
+}
+
+.about-block p {
+    font-size: 1.2rem;
+    width: 80%;
+    color: white;
+    text-align: center;
+}
